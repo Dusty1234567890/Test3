@@ -1,0 +1,62 @@
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("GASTER HUB")
+
+local KillingCheats = PhantomForcesWindow:NewSection("Null")
+
+KillingCheats:CreateButton("null badge", function()
+fireclickdetector(workspace.Model.Handle.ClickDetector)
+end)
+
+local KillingCheats = PhantomForcesWindow:NewSection("Tinkerer")
+
+KillingCheats:CreateButton("tinkerer badge", function()
+local roomSize = Vector3.new(30, 30, 30) -- Adjust the size of the room as needed
+local roomPosition = CFrame.new(Vector3.new(5229.62744, -139.00119, 806.620178, -0.212458134, 0, 0.977170229, 0, 1.00000012, -0, -0.977170229, 0, -0.212458134))
+local roomRotation = CFrame.new(Vector3.new(-0.662553251, -1.81628099e-08, -0.749014795), Vector3.new(6.68874307e-08, 1, -8.34153013e-08), Vector3.new(0.749014795, -1.05366752e-07, -0.662553251))
+
+-- Create the room part
+local roomPart = Instance.new("Part")
+roomPart.Size = roomSize
+roomPart.CFrame = roomPosition * roomRotation
+roomPart.BrickColor = BrickColor.new("Medium stone grey") -- Set the color of the room to grey
+roomPart.Anchored = true
+roomPart.Transparency = 1 -- Make the room transparent
+roomPart.Parent = workspace
+
+-- Create the surface GUI to apply the image
+local surfaceGui = Instance.new("SurfaceGui")
+surfaceGui.Face = Enum.NormalId.Front
+surfaceGui.Parent = roomPart
+
+-- Create the image label
+local imageLabel = Instance.new("ImageLabel")
+imageLabel.Size = UDim2.new(1, 0, 1, 0)
+imageLabel.BackgroundTransparency = 1
+imageLabel.Image = "https://www.roblox.com/asset-thumbnail/image?assetId=10905815930&width=420&height=420"
+imageLabel.Parent = surfaceGui
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5225.78564, -139.035309, 781.291626, -0.999694645, 9.50548174e-09, 0.024711797, 8.07019873e-09, 1, -5.81805963e-08, -0.024711797, -5.79633976e-08, -0.999694645)
+wait(2)
+fireclickdetector(workspace:GetChildren()[13].Handle.ClickDetector)
+end)
+
+local KillingCheats = PhantomForcesWindow:NewSection("Method 2")
+
+KillingCheats:CreateButton("only if u have 3 plushies", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(18661.6172, 3002.72485, -298.155304, 0.999925911, -0, -0.0121711809, 0, 1, -0, 0.0121711809, 0, 0.999925911)
+end)
+
+local KillingCheats = PhantomForcesWindow:NewSection("Credits")
+
+KillingCheats:CreateButton("on youtube", function()
+print("THE DARKNESS KEEPS GROWING")
+end)
+
+KillingCheats:CreateButton("THEDARKNESSKEEPSGROWING", function()
+print("SUB TO ME")
+end)
+
+KillingCheats:CreateButton("click to copy my yt channel link", function()
+setclipboard("https://www.youtube.com/@THEDARKNESSKEEPSGROWING")
+end)
